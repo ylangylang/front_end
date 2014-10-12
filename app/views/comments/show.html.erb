@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @comment.task %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @comment.state %>
+</p>
+
+<p>
+  <strong>Feeling:</strong>
+  <%= @comment.feeling %>
+</p>
+
+<p>
+  <strong>Progress:</strong>
+  <%= @comment.progress %>
+</p>
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
